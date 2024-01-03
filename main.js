@@ -7,7 +7,7 @@ const myPersevereCodeObj = {
 // You won't change lines 1-3 above, but instead set and change the properties for each step below by writing NEW code underneath each comment.
 
 // Below, set the value of property `wait` to be "I object".
-myPersevereCodeObj['wait'] = 'I object'
+myPersevereCodeObj['wait'] = 'I object'   //myPersevereCodeObj.wait = "I object"
 
 // Add the new property `isAnExcellentObject` and set it to `true`.
 myPersevereCodeObj.isAnExcellentObject = true
@@ -16,7 +16,7 @@ myPersevereCodeObj.isAnExcellentObject = true
 myPersevereCodeObj.term = 1
 
 // Now add 1 to the value of your object's `term` property and put that new value back in your object's `term`.
-myPersevereCodeObj['term']= 1+1
+myPersevereCodeObk.term += 1   //myPersevereCodeObj['term']= 1+1 -->does not reference original object like its asking
 
 // Now add a new property called `currentScore` and set it to 3.
 myPersevereCodeObj.currentScore = 3
@@ -25,10 +25,10 @@ myPersevereCodeObj.currentScore = 3
 myPersevereCodeObj.cumulativeScore = 50
 
 // Now add your `currentScore` and your `cumulativeScore` and put it back in `cumulativeScore`.
-myPersevereCodeObj.cumulativeScore = myPersevereCodeObj.cumulativeScore + myPersevereCodeObj.currentScore
+myPersevereCodeObj.cumulativeScore = myPersevereCodeObj.cumulativeScore + myPersevereCodeObj.currentScore  //myPersevereCodeObj.cumulativeScore += myPersevereCodeObj.currentScore
 
 // Now add a property called `I am exactly this cool` (you'll need bracket notation!) and set it to `soooooo cool`.
-myPersevereCodeObj['I am exactly this cool'] = ['soooooo cool']
+myPersevereCodeObj['I am exactly this cool'] = 'soooooo cool'
 
 // Part 2 - your own object.
 // Now make a new EMPTY object that represents yourself. You won't put any properties in the curly braces, but just like in part 1, add them in each step below using plain JavaScript statements.
@@ -65,6 +65,5 @@ const autoStore = {
   openSundays: false,
   'Number of Employees' : 12
 }
-console.log(autoStore)
 
 // As a stretch goal, go back pre-populate the object with at least one property using a key name that CAN'T be a variable name. That would be anything with a space in it, or a dash, or starting with a number.
